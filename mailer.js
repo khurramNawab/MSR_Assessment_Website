@@ -1,8 +1,13 @@
 /**
  * MSR Assessment — mailer.js
  * Handles inquiry form and newsletter form submissions
- * (Simulates backend — replace with actual API endpoint)
+ * Web3Forms client-side integration
  */
+
+// --- CONFIGURATION ---
+// Web3Forms Access Key for admin@msrassessment.com
+// Register at https://web3forms.com/ to get your Access Key and paste it below.
+const WEB3FORMS_ACCESS_KEY = 'YOUR_ACCESS_KEY_HERE';
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -136,11 +141,56 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ─── SIMULATE BACKEND ─────────────────────────────────────────────────────
-  // Replace this function with your actual fetch/API call
-  function simulateSend(data) {
-    console.log('[MSR Mailer] Submission:', data);
-    return new Promise((resolve) => setTimeout(resolve, 1200));
+  // ─── MAIL SUBMISSION ──────────────────────────────────────────────────────
+  // Sends form submissions to Web3Forms if an access key is provided, 
+  // otherwise falls back to a simulated console-log submission for local development.
+  async function simulateSend(data) {
+    if (!WEB3FORMS_ACCESS_KEY || WEB3FORMS_ACCESS_KEY === 'YOUR_ACCESS_KEY_HERE') {
+      console.warn('[MSR Mailer] Web3Forms Access Key is not configured. Simulating submission.');
+      console.log('[MSR Mailer] Simulated Payload:', data);
+      return new Promise((resolve) => setTimeout(resolve, 1200));
+    }
+
+    const payload = {
+      access_key: WEB3FORMS_ACCESS_KEY,
+      from_name: "MSR Assessment Website",
+      subject: data.type === 'newsletter' 
+        ? "New Newsletter Subscription - MSR Assessment" 
+        : `New Inquiry from ${data.name} - MSR Assessment`,
+      ...data
+    };
+
+    // If it's a regular inquiry, we can also add a nice formatted text representation
+    if (data.type !== 'newsletter') {
+      payload.message_body = `
+Name: ${data.name}
+Email: ${data.email}
+Phone: ${data.phone}
+Service: ${data.service}
+Message: ${data.message}
+      `.trim();
+    }
+
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify(payload)
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const result = await response.json();
+    if (!result.success) {
+      throw new Error(result.message || 'Submission failed');
+    }
+    
+    console.log('[MSR Mailer] Web3Forms Submission Successful:', result);
+    return result;
   }
 
 });
