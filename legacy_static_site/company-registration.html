@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Service Details — MSR Assessment Pvt Ltd Expert CA & CS professionals handle your corporate compliance needs.">
+  <title>Service Details | MSR Assessment Pvt Ltd</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* ─── SERVICE PAGE SPECIFIC STYLES ─── */
+
+    /* Hero */
+    .svc-page-hero {
+      padding: calc(38px + 70px + 72px) 0 72px;
+      background: var(--bg-alt);
+      border-bottom: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .svc-page-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(135deg, transparent 0%, rgba(24, 49, 83, 0.04) 100%);
+      pointer-events: none;
+    }
+
+    .svc-hero-inner {
+      max-width: var(--content-w);
+      margin: 0 auto;
+      padding: 0 var(--s5);
+      display: grid;
+      grid-template-columns: 1fr 360px;
+      gap: 64px;
+      align-items: start;
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 13px;
+      color: var(--text-faint);
+      margin-bottom: var(--s3);
+    }
+
+    .breadcrumb a {
+      color: var(--primary);
+      font-weight: 500;
+    }
+
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    .breadcrumb i {
+      font-size: 9px;
+      color: var(--text-faint);
+    }
+
+    /* Service Badge */
+    .svc-cat-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--accent-pale);
+      border: 1px solid rgba(184, 137, 42, 0.2);
+      color: var(--accent);
+      padding: 5px 13px;
+      border-radius: var(--r-pill);
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: var(--s2);
+    }
+
+    .svc-cat-badge i {
+      font-size: 11px;
+    }
+
+    .svc-page-title {
+      font-family: var(--font-head);
+      font-size: clamp(36px, 5vw, 52px);
+      font-weight: 800;
+      letter-spacing: -2px;
+      color: var(--text);
+      line-height: 1.08;
+      margin-bottom: var(--s3);
+    }
+
+    .svc-page-subtitle {
+      font-size: 16.5px;
+      color: var(--text-muted);
+      line-height: 1.78;
+      max-width: 520px;
+    }
+
+    .svc-meta-row {
+      display: flex;
+      align-items: center;
+      gap: var(--s4);
+      margin-top: var(--s4);
+      padding-top: var(--s3);
+      border-top: 1px solid var(--border);
+    }
+
+    .svc-meta-item {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .svc-meta-label {
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--text-faint);
+    }
+
+    .svc-meta-value {
+      font-family: var(--font-head);
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.3px;
+    }
+
+    .svc-meta-value.gold {
+      color: var(--accent);
+    }
+
+    .svc-meta-divider {
+      width: 1px;
+      height: 36px;
+      background: var(--border-solid);
+    }
+
+    /* Sticky Sidebar */
+    .svc-sidebar {
+      position: sticky;
+      top: calc(38px + 70px + 24px);
+    }
+
+    .svc-sidebar-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--r-xl);
+      overflow: hidden;
+      box-shadow: var(--sh-lg);
+    }
+
+    .sscard-header {
+      background: var(--primary);
+      padding: var(--s3) var(--s4);
+    }
+
+    .sscard-price-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.45);
+      margin-bottom: 4px;
+    }
+
+    .sscard-price {
+      font-family: var(--font-head);
+      font-size: 36px;
+      font-weight: 800;
+      color: white;
+      letter-spacing: -1.5px;
+      line-height: 1;
+    }
+
+    .sscard-price-note {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.45);
+      margin-top: 5px;
+    }
+
+    .sscard-body {
+      padding: var(--s3) var(--s4);
+    }
+
+    .sscard-detail-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 13.5px;
+    }
+
+    .sscard-detail-row:last-child {
+      border-bottom: none;
+    }
+
+    .sscard-detail-label {
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .sscard-detail-value {
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .sscard-detail-value.green {
+      color: var(--success);
+    }
+
+    .sscard-cta {
+      padding: 0 var(--s4) var(--s4);
+    }
+
+    .sscard-cta .btn {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .sscard-guarantee {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--r-md);
+      padding: 10px 14px;
+      margin-top: 10px;
+    }
+
+    .sscard-guarantee i {
+      color: var(--success);
+    }
+
+    .sscard-guarantee span {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    /* Service Body */
+    .svc-body-section {
+      padding: var(--s10) 0;
+    }
+
+    .svc-body-inner {
+      max-width: var(--content-w);
+      margin: 0 auto;
+      padding: 0 var(--s5);
+      display: grid;
+      grid-template-columns: 1fr 360px;
+      gap: 64px;
+      align-items: start;
+    }
+
+    .svc-body-main {}
+
+    /* Content Sections */
+    .svc-content-section {
+      margin-bottom: var(--s7);
+    }
+
+    .svc-content-section h3 {
+      font-family: var(--font-head);
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.4px;
+      color: var(--text);
+      margin-bottom: var(--s3);
+      padding-bottom: var(--s2);
+      border-bottom: 2px solid var(--border-solid);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .svc-content-section h3 i {
+      color: var(--primary);
+      font-size: 16px;
+    }
+
+    /* Benefits Grid */
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .benefit-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: var(--s3);
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      transition: var(--t-fast);
+    }
+
+    .benefit-item:hover {
+      border-color: rgba(24, 49, 83, 0.2);
+      box-shadow: var(--sh-sm);
+    }
+
+    .benefit-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: var(--r-sm);
+      background: var(--bg-alt);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      font-size: 13px;
+      flex-shrink: 0;
+    }
+
+    .benefit-icon.gold {
+      background: var(--accent-pale);
+      color: var(--accent);
+    }
+
+    .benefit-title {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 3px;
+    }
+
+    .benefit-desc {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* Documents List */
+    .docs-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+
+    .doc-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--r-sm);
+      font-size: 13px;
+      color: var(--text-mid);
+      font-weight: 500;
+    }
+
+    .doc-item i {
+      color: var(--primary);
+      font-size: 12px;
+      flex-shrink: 0;
+    }
+
+    /* Process Steps */
+    .process-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .ps-item {
+      display: flex;
+      gap: var(--s3);
+      position: relative;
+      padding-bottom: var(--s4);
+    }
+
+    .ps-item:last-child {
+      padding-bottom: 0;
+    }
+
+    .ps-item::before {
+      content: '';
+      position: absolute;
+      left: 19px;
+      top: 40px;
+      bottom: 0;
+      width: 1px;
+      background: var(--border-solid);
+    }
+
+    .ps-item:last-child::before {
+      display: none;
+    }
+
+    .ps-node {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-family: var(--font-head);
+      font-size: 13px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .ps-body {
+      padding-top: 10px;
+    }
+
+    .ps-title {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+
+    .ps-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* FAQ */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .faq-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--r-md);
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      padding: 16px 20px;
+      text-align: left;
+      font-family: var(--font-body);
+      font-size: 14.5px;
+      font-weight: 600;
+      color: var(--text);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: var(--s2);
+      transition: background 0.18s ease;
+    }
+
+    .faq-question:hover {
+      background: var(--bg);
+    }
+
+    .faq-question i {
+      font-size: 12px;
+      color: var(--text-faint);
+      transition: transform 0.25s ease;
+      flex-shrink: 0;
+    }
+
+    .faq-item.open .faq-question i {
+      transform: rotate(180deg);
+    }
+
+    .faq-item.open .faq-question {
+      background: var(--bg);
+      color: var(--primary);
+    }
+
+    .faq-answer {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      padding: 0 20px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+      padding: 0 20px 16px;
+    }
+
+    /* Related Services */
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .related-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: var(--s3);
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transition: var(--t-base);
+    }
+
+    .related-card:hover {
+      border-color: rgba(24, 49, 83, 0.25);
+      box-shadow: var(--sh-md);
+      transform: translateY(-2px);
+    }
+
+    .related-icon {
+      width: 36px;
+      height: 36px;
+      background: var(--bg-alt);
+      border-radius: var(--r-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      font-size: 14px;
+    }
+
+    .related-title {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.35;
+    }
+
+    .related-time {
+      font-size: 12px;
+      color: var(--text-faint);
+      margin-top: 2px;
+    }
+
+    /* Sticky sidebar for body section */
+    .svc-sidebar-sticky {
+      position: sticky;
+      top: calc(38px + 70px + 24px);
+    }
+
+    .expert-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: var(--s4);
+      margin-bottom: 14px;
+    }
+
+    .expert-card h4 {
+      font-family: var(--font-head);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: var(--s2);
+    }
+
+    .expert-card p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: var(--s2);
+    }
+
+    .expert-assurances {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .ea-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--text-mid);
+      font-weight: 500;
+    }
+
+    .ea-item i {
+      color: var(--success);
+      font-size: 12px;
+      width: 14px;
+    }
+
+    @media (max-width: 900px) {
+
+      .svc-hero-inner,
+      .svc-body-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .svc-sidebar,
+      .svc-sidebar-sticky {
+        position: static;
+      }
+
+      .benefits-grid,
+      .docs-list,
+      .related-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .svc-meta-row {
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+  <link rel="icon" type="image/png" href="msr.png">
+
+  <link rel="canonical" href="https://msrassessment.com/company-registration.html">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://msrassessment.com/company-registration.html#webpage",
+    "name": "Service Details",
+    "url": "https://msrassessment.com/company-registration.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "MSR Assessment Pvt Ltd",
+      "url": "https://msrassessment.com"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Trust Ribbon -->
+  <div class="trust-ribbon" role="marquee" aria-label="Trust indicators">
+    <div class="trust-ribbon-track">
+      <span class="ribbon-item"><span class="ri-dot"></span> Accredited ISO Audits</span>
+      <span class="ribbon-item"><span class="ri-dot"></span> <strong>5,000+</strong> Audits Completed</span>
+      <span class="ribbon-item"><span class="ri-dot"></span> <strong>12+ Years</strong> Regulatory Experience</span>
+      <span class="ribbon-item"><span class="ri-dot"></span> IRCA Certified Lead Auditors</span>
+      <span class="ribbon-item"><span class="ri-dot"></span> Corporate Governance Specialists</span>
+      <span class="ribbon-item"><span class="ri-dot"></span> Pan-India Audit Offices</span>
+      <span class="ribbon-item"><span class="ri-dot"></span> Accredited ISO Audits</span>
+      <span class="ribbon-item"><span class="ri-dot"></span> <strong>5,000+</strong> Audits Completed</span>
+      <span class="ribbon-item"><span class="ri-dot"></span> <strong>12+ Years</strong> Regulatory Experience</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header scrolled" id="site-header" role="banner">
+    <div class="header-wrap">
+      <!-- Logo -->
+      <a href="index.html" class="site-logo" aria-label="MSR Assessment Pvt Ltd Home">
+        <img src="msr.png" alt="MSR Assessment Pvt Ltd Logo" width="40" height="40">
+        <div class="logo-wordmark">
+          <span class="logo-name">MSR Assessment Pvt Ltd</span>
+          <span class="logo-tagline">Corporate &amp; Legal Services</span>
+        </div>
+      </a>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Navigation -->
+      <nav class="header-nav" role="navigation" aria-label="Main navigation" id="header-nav">
+        <button class="menu-close-btn" id="mobile-menu-close" aria-label="Close navigation">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about-us.html" class="nav-link">About Us</a>
+
+        <!-- Services Mega Menu -->
+        <div class="nav-dropdown">
+          <button class="nav-link" aria-expanded="false" aria-haspopup="true" id="nav-services-btn">
+            Services <span class="chevron"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="mega-panel mega-panel-wide" role="menu" aria-labelledby="nav-services-btn">
+            <div class="mega-grid">
+
+              <!-- Column 1: Company Registration & Documentation -->
+              <div class="mega-col">
+                <div class="mega-category-block" data-cat-id="inc">
+                  <div class="mega-col-label">Incorporation</div>
+                  <h4>Company Registration</h4>
+                  <div class="mega-links">
+                    <a href="company-registration.html" class="mega-link"
+                      style="font-weight:700;color:var(--primary);"><i class="fas fa-circle-arrow-right"></i> Overview
+                      Page</a>
+                    <a href="service.html?id=private-limited-company-registration-india" class="mega-link">Private Limited Co</a>
+                    <a href="service.html?id=llp-registration" class="mega-link">LLP Registration</a>
+                    <a href="service.html?id=opc-registration" class="mega-link">OPC Registration</a>
+                    <a href="service.html?id=partnership-firm" class="mega-link">Partnership Firm</a>
+                    <a href="service.html?id=startup-india-registration" class="mega-link">Startup India</a>
+                    <a href="service.html?id=nidhi-company" class="mega-link">Nidhi Company</a>
+                    <a href="service.html?id=section-8-company" class="mega-link">Section 8 Company</a>
+                  </div>
+                </div>
+                <div class="mega-category-block" data-cat-id="docs">
+                  <div class="mega-col-label">Contracts</div>
+                  <h4>Documentation Services</h4>
+                  <div class="mega-links">
+                    <a href="service.html?id=legal-drafting" class="mega-link">Legal Drafting</a>
+                    <a href="service.html?id=agreements" class="mega-link">Agreements &amp; Contracts</a>
+                    <a href="service.html?id=affidavits" class="mega-link">Affidavits Preparation</a>
+                    <a href="service.html?id=moa-aoa" class="mega-link">MOA &amp; AOA Drafting</a>
+                    <a href="service.html?id=compliance-documentation" class="mega-link">Compliance Drafting</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Column 2: ISO Certification & Training Services -->
+              <div class="mega-col">
+                <div class="mega-category-block" data-cat-id="iso">
+                  <div class="mega-col-label">Standards</div>
+                  <h4>ISO Certification</h4>
+                  <div class="mega-links">
+                    <a href="iso-certification.html" class="mega-link" style="font-weight:700;color:var(--primary);"><i
+                        class="fas fa-circle-arrow-right"></i> Overview Page</a>
+                    <a href="iso-9001-certification.html" class="mega-link">ISO 9001 (Quality)</a>
+                    <a href="iso-14001-certification.html" class="mega-link">ISO 14001 (Environment)</a>
+                    <a href="iso-27001-certification.html" class="mega-link">ISO 27001 (Security)</a>
+                    <a href="iso-45001-certification.html" class="mega-link">ISO 45001 (Health &amp; Safety)</a>
+                    <a href="iso-22000-certification.html" class="mega-link">ISO 22000 (Food Safety)</a>
+                    <a href="iso-13485-certification.html" class="mega-link">ISO 13485 (Medical Devices)</a>
+                    <a href="iso-50001-certification.html" class="mega-link">ISO 50001 (Energy)</a>
+                    <a href="iso-31000-consulting.html" class="mega-link">ISO 31000 (Risk Management)</a>
+                    <a href="service.html?id=gmp-certification" class="mega-link">GMP Certification</a>
+                    <a href="service.html?id=haccp-certification" class="mega-link">HACCP Certification</a>
+                  </div>
+                </div>
+                <div class="mega-category-block" data-cat-id="training">
+                  <div class="mega-col-label">Workshops</div>
+                  <h4>Training Services</h4>
+                  <div class="mega-links">
+                    <a href="training-services.html" class="mega-link" style="font-weight:700;color:var(--primary);"><i
+                        class="fas fa-circle-arrow-right"></i> Overview Page</a>
+                    <a href="service.html?id=iso-awareness-training" class="mega-link">ISO Awareness</a>
+                    <a href="service.html?id=internal-auditor-training" class="mega-link">Internal Auditor Training</a>
+                    <a href="service.html?id=compliance-training" class="mega-link">Compliance Training</a>
+                    <a href="service.html?id=corporate-workshops" class="mega-link">Corporate Workshops</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Column 3: Digital Services & IPR Services -->
+              <div class="mega-col">
+                <div class="mega-category-block" data-cat-id="digital">
+                  <div class="mega-col-label">Software &amp; Web</div>
+                  <h4>Digital Services</h4>
+                  <div class="mega-links">
+                    <a href="website-development.html" class="mega-link"
+                      style="font-weight:700;color:var(--primary);"><i class="fas fa-circle-arrow-right"></i> Web
+                      Development</a>
+                    <a href="mobile-app-development.html" class="mega-link"
+                      style="font-weight:700;color:var(--primary);"><i class="fas fa-circle-arrow-right"></i> Mobile App
+                      Dev</a>
+                    <a href="digital-marketing.html" class="mega-link" style="font-weight:700;color:var(--primary);"><i
+                        class="fas fa-circle-arrow-right"></i> Digital Marketing</a>
+                    <a href="service.html?id=e-commerce-development" class="mega-link">E-Commerce Dev</a>
+                    <a href="service.html?id=seo-services" class="mega-link">SEO Services</a>
+                    <a href="service.html?id=social-media-marketing" class="mega-link">Social Media Marketing</a>
+                    <a href="service.html?id=branding-design" class="mega-link">Branding &amp; Design</a>
+                  </div>
+                </div>
+                <div class="mega-category-block" data-cat-id="ip">
+                  <div class="mega-col-label">IP &amp; Branding</div>
+                  <h4>IPR Services</h4>
+                  <div class="mega-links">
+                    <a href="trademark-registration.html" class="mega-link"
+                      style="font-weight:700;color:var(--primary);"><i class="fas fa-circle-arrow-right"></i> Overview
+                      Page</a>
+                    <a href="service.html?id=trademark-objection" class="mega-link">Trademark Objection</a>
+                    <a href="service.html?id=trademark-renewal" class="mega-link">Trademark Renewal</a>
+                    <a href="service.html?id=copyright-registration" class="mega-link">Copyright Registration</a>
+                    <a href="service.html?id=patent-filing" class="mega-link">Patent Filing</a>
+                    <a href="service.html?id=design-registration" class="mega-link">Design Registration</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Column 4: Tax, Licensing & Auditing -->
+              <div class="mega-col">
+                <div class="mega-category-block" data-cat-id="licenses">
+                  <div class="mega-col-label">Tax &amp; Licensing</div>
+                  <h4>Licenses &amp; Approvals</h4>
+                  <div class="mega-links">
+                    <a href="gst-registration.html" class="mega-link" style="font-weight:700;color:var(--primary);"><i
+                        class="fas fa-circle-arrow-right"></i> GST Registration</a>
+                    <a href="fssai-license.html" class="mega-link" style="font-weight:700;color:var(--primary);"><i
+                        class="fas fa-circle-arrow-right"></i> FSSAI License</a>
+                    <a href="msme-registration.html" class="mega-link" style="font-weight:700;color:var(--primary);"><i
+                        class="fas fa-circle-arrow-right"></i> MSME Registration</a>
+                    <a href="service.html?id=iec-registration" class="mega-link">IEC Registration</a>
+                    <a href="service.html?id=trade-license" class="mega-link">Trade License</a>
+                    <a href="service.html?id=shop-establishment-license" class="mega-link">Shop &amp; Establishment</a>
+                  </div>
+                </div>
+                <div class="mega-category-block" data-cat-id="audit">
+                  <div class="mega-col-label">Risk &amp; Review</div>
+                  <h4>Audit &amp; Inspection</h4>
+                  <div class="mega-links">
+                    <a href="audit-services.html" class="mega-link" style="font-weight:700;color:var(--primary);"><i
+                        class="fas fa-circle-arrow-right"></i> Overview Page</a>
+                    <a href="internal-audit-services.html" class="mega-link">Internal Audit</a>
+                    <a href="compliance-consulting.html" class="mega-link">Compliance Audit</a>
+                    <a href="service.html?id=iso-audit" class="mega-link">ISO Audit Support</a>
+                    <a href="service.html?id=risk-assessment" class="mega-link">Risk Assessment</a>
+                    <a href="service.html?id=inspection-support" class="mega-link">Inspection Support</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <a href="certification-process.html" class="nav-link">Certification Process</a>
+        <a href="career.html" class="nav-link">Career</a>
+        <a href="blogs.html" class="nav-link">Blogs</a>
+        <a href="contact.html" class="nav-link nav-contact-btn">Contact Us</a>
+        <a href="payment.html" class="nav-link">Online Payment</a>
+
+        <!-- Language Selector Dropdown -->
+        <div class="nav-dropdown lang-selector">
+          <button class="nav-link" aria-expanded="false" aria-haspopup="true" id="lang-btn">
+            <i class="fas fa-globe"></i> <span id="lang-current">EN</span> <span class="chevron"><i
+                class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="mega-panel mega-panel-xs lang-panel">
+            <a href="#" class="lang-item active" data-lang="en">English</a>
+            <a href="#" class="lang-item" data-lang="hi">हिन्दी (Hindi)</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-sm btn-primary" id="btn-inquiry"
+          onclick="document.getElementById('inquiry-modal').classList.add('open')">
+          Talk To An Expert
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ─── SERVICE HERO ─── -->
+    <section class="svc-page-hero" aria-label="Service hero">
+      <div class="svc-hero-inner">
+
+        <!-- Left: Title & Meta -->
+        <div class="svc-hero-left" data-reveal>
+          <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="index.html#services-section">Services</a>
+            <i class="fas fa-chevron-right"></i>
+            <span id="svc-category-label">Loading...</span>
+          </div>
+
+          <div class="svc-cat-badge">
+            <i class="fas fa-award"></i>
+            <span id="svc-category">Loading...</span>
+          </div>
+
+          <h1 class="svc-page-title" id="svc-title">Loading Service...</h1>
+          <p class="svc-page-subtitle" id="svc-desc">Please wait while we load the details.</p>
+
+          <div class="svc-meta-row">
+            <div class="svc-meta-item">
+              <span class="svc-meta-label">Starting From</span>
+              <span class="svc-meta-value gold" id="svc-price">--</span>
+            </div>
+            <div class="svc-meta-divider"></div>
+            <div class="svc-meta-item">
+              <span class="svc-meta-label">Processing Time</span>
+              <span class="svc-meta-value" id="svc-time">--</span>
+            </div>
+            <div class="svc-meta-divider"></div>
+            <div class="svc-meta-item">
+              <span class="svc-meta-label">Success Rate</span>
+              <span class="svc-meta-value">98%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Sticky Quote Card -->
+        <div class="svc-sidebar" data-reveal data-reveal-delay="2">
+          <div class="svc-sidebar-card">
+            <div class="sscard-header">
+              <div class="sscard-price-label">Professional Fee Starting At</div>
+              <div class="sscard-price" id="sscard-price">--</div>
+              <div class="sscard-price-note">Govt. fees communicated separately &amp; upfront</div>
+            </div>
+            <div class="sscard-body">
+              <div class="sscard-detail-row">
+                <span class="sscard-detail-label">Processing Time</span>
+                <span class="sscard-detail-value" id="sscard-time">--</span>
+              </div>
+              <div class="sscard-detail-row">
+                <span class="sscard-detail-label">Expert Assigned</span>
+                <span class="sscard-detail-value green">CA / CS Professional</span>
+              </div>
+              <div class="sscard-detail-row">
+                <span class="sscard-detail-label">Communication</span>
+                <span class="sscard-detail-value">WhatsApp + Email</span>
+              </div>
+              <div class="sscard-detail-row">
+                <span class="sscard-detail-label">Process</span>
+                <span class="sscard-detail-value">100% Digital</span>
+              </div>
+            </div>
+            <div class="sscard-cta">
+              <button class="btn btn-md btn-primary" id="svc-inquiry-btn" style="width:100%;">
+                Talk To An Expert <i class="fas fa-arrow-right"></i>
+              </button>
+              <div class="sscard-guarantee">
+                <i class="fas fa-shield-check"></i>
+                <span>100% Compliance Guarantee — errors fixed at zero cost</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── SERVICE BODY ─── -->
+    <section class="svc-body-section">
+      <div class="svc-body-inner">
+
+        <!-- Main Content -->
+        <div class="svc-body-main">
+
+          <!-- About Section -->
+          <div class="svc-content-section" data-reveal>
+            <h3><i class="fas fa-info-circle"></i> About This Service</h3>
+            <p style="font-size:15px;color:var(--text-muted);line-height:1.8;" id="svc-about-text">
+              Loading service details...
+            </p>
+          </div>
+
+          <!-- Benefits -->
+          <div class="svc-content-section" data-reveal>
+            <h3><i class="fas fa-check-circle"></i> Key Benefits</h3>
+            <div class="benefits-grid">
+              <div class="benefit-item">
+                <div class="benefit-icon"><i class="fas fa-user-graduate"></i></div>
+                <div>
+                  <div class="benefit-title">Expert CA / CS Professional</div>
+                  <div class="benefit-desc">Handled by a fully qualified professional, not an assistant or automated
+                    system.</div>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-icon gold"><i class="fas fa-bolt"></i></div>
+                <div>
+                  <div class="benefit-title">Fast Execution</div>
+                  <div class="benefit-desc">Work begins immediately after document submission. No unnecessary delays.
+                  </div>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-icon"><i class="fas fa-lock"></i></div>
+                <div>
+                  <div class="benefit-title">Strict Confidentiality</div>
+                  <div class="benefit-desc">Your documents and business data are handled with highest confidentiality
+                    protocols.</div>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-icon gold"><i class="fas fa-rupee-sign"></i></div>
+                <div>
+                  <div class="benefit-title">All-Inclusive Fixed Price</div>
+                  <div class="benefit-desc">No surprise bills. Our quote includes professional fees with govt. fees
+                    disclosed upfront.</div>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-icon"><i class="fas fa-headset"></i></div>
+                <div>
+                  <div class="benefit-title">Dedicated Relationship Manager</div>
+                  <div class="benefit-desc">Single point of contact assigned to your case, available throughout the
+                    process.</div>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-icon gold"><i class="fas fa-shield-check"></i></div>
+                <div>
+                  <div class="benefit-title">Compliance Guarantee</div>
+                  <div class="benefit-desc">All filings are guaranteed compliant. Any errors are corrected at zero
+                    additional cost.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Documents Required -->
+          <div class="svc-content-section" data-reveal>
+            <h3><i class="fas fa-folder-open"></i> Documents Required</h3>
+            <div class="docs-list" id="svc-docs-list">
+              <div class="doc-item"><i class="fas fa-file-alt"></i> PAN Card of all Directors</div>
+              <div class="doc-item"><i class="fas fa-file-alt"></i> Aadhaar Card of all Directors</div>
+              <div class="doc-item"><i class="fas fa-file-alt"></i> Address Proof (Directors)</div>
+              <div class="doc-item"><i class="fas fa-file-alt"></i> Registered Office Address Proof</div>
+              <div class="doc-item"><i class="fas fa-file-alt"></i> Passport-size Photographs</div>
+              <div class="doc-item"><i class="fas fa-file-alt"></i> Mobile Number &amp; Email ID</div>
+            </div>
+            <p style="font-size:12.5px;color:var(--text-faint);margin-top:12px;">
+              <i class="fas fa-info-circle"></i> Our expert will provide a precise document checklist specific to your
+              case after your consultation.
+            </p>
+          </div>
+
+          <!-- Process Steps -->
+          <div class="svc-content-section" data-reveal>
+            <h3><i class="fas fa-route"></i> Our Process</h3>
+            <div class="process-steps">
+              <div class="ps-item">
+                <div class="ps-node">1</div>
+                <div class="ps-body">
+                  <div class="ps-title">Initial Consultation</div>
+                  <p class="ps-desc">Submit your inquiry. Our CA/CS expert reviews your requirement and clarifies any
+                    doubts within 2 hours.</p>
+                </div>
+              </div>
+              <div class="ps-item">
+                <div class="ps-node">2</div>
+                <div class="ps-body">
+                  <div class="ps-title">Document Collection</div>
+                  <p class="ps-desc">We provide a precise document list. You share documents digitally — no physical
+                    visits needed.</p>
+                </div>
+              </div>
+              <div class="ps-item">
+                <div class="ps-node">3</div>
+                <div class="ps-body">
+                  <div class="ps-title">Preparation &amp; Filing</div>
+                  <p class="ps-desc">Our expert prepares all applications, forms, and documents, then submits them to
+                    the relevant government authority.</p>
+                </div>
+              </div>
+              <div class="ps-item">
+                <div class="ps-node">4</div>
+                <div class="ps-body">
+                  <div class="ps-title">Tracking &amp; Follow-up</div>
+                  <p class="ps-desc">We actively track your application, respond to department queries, and keep you
+                    updated via WhatsApp and email.</p>
+                </div>
+              </div>
+              <div class="ps-item">
+                <div class="ps-node">5</div>
+                <div class="ps-body">
+                  <div class="ps-title">Certificate Delivered</div>
+                  <p class="ps-desc">Once approved, all certificates and documents are delivered digitally. We also
+                    provide an advisory note for next steps.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQs -->
+          <div class="svc-content-section" data-reveal>
+            <h3><i class="fas fa-question-circle"></i> Frequently Asked Questions</h3>
+            <div class="faq-list" id="svc-faq-list">
+              <div class="faq-item">
+                <button class="faq-question">
+                  How long does the process take?
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                  The processing time depends on the specific service and government authority processing speed. For
+                  most services, we aim for the fastest possible turnaround. Our team will give you a realistic timeline
+                  during the consultation.
+                </div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question">
+                  Do I need to visit your office in person?
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                  No. Our entire process is 100% digital. You can share all documents electronically and communicate via
+                  email or WhatsApp throughout. There is no need to visit any government office either — we handle all
+                  that.
+                </div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question">
+                  Are there any hidden charges?
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                  Absolutely not. Our pricing is all-inclusive of professional fees. Where government fees apply, they
+                  are communicated clearly upfront before you confirm the order. You will never receive a surprise bill
+                  from us.
+                </div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question">
+                  What if my application is rejected?
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                  Our 98% first-attempt success rate means rejections are rare. However, if there is a rejection or
+                  department query, our team handles the response and resubmission at no additional professional charge.
+                  This is covered under our compliance guarantee.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Related Services -->
+          <div class="svc-content-section" data-reveal>
+            <h3><i class="fas fa-link"></i> Related Services</h3>
+            <div class="related-grid" id="related-grid">
+              <!-- Injected by JS -->
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Sticky Right Sidebar -->
+        <div>
+          <div class="svc-sidebar-sticky">
+            <div class="expert-card">
+              <h4>Why Work With MSR?</h4>
+              <p>Every service is personally owned by a qualified CA or CS — not a junior assistant. We've handled
+                5,000+ business compliance requirements since 2013.</p>
+              <div class="expert-assurances">
+                <div class="ea-item"><i class="fas fa-check-circle"></i> Qualified CA &amp; CS Professionals</div>
+                <div class="ea-item"><i class="fas fa-check-circle"></i> Transparent, Fixed Pricing</div>
+                <div class="ea-item"><i class="fas fa-check-circle"></i> 72-Hour Turnaround for Most Services</div>
+                <div class="ea-item"><i class="fas fa-check-circle"></i> Pan-India Filing Capability</div>
+                <div class="ea-item"><i class="fas fa-check-circle"></i> 100% Digital, No Office Visits</div>
+                <div class="ea-item"><i class="fas fa-check-circle"></i> Dedicated Relationship Manager</div>
+              </div>
+            </div>
+
+            <button class="btn btn-md btn-primary" id="sidebar-inquiry-btn" style="width:100%;justify-content:center;">
+              <i class="fas fa-paper-plane"></i> Send Inquiry Now
+            </button>
+
+            <div style="text-align:center;margin-top:12px;">
+              <a href="tel:+918337004170"
+                style="font-size:13px;color:var(--text-muted);display:flex;align-items:center;justify-content:center;gap:6px;">
+                <i class="fas fa-phone" style="color:var(--primary);"></i>
+                Call: +91 83370 04170
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-grid">
+      <!-- Brand -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="msr.png" alt="MSR Assessment Pvt Ltd" width="38" height="38">
+          <span class="footer-logo-name">MSR Assessment Pvt Ltd</span>
+        </div>
+        <p class="footer-tagline">
+          India's trusted third-party registrar and auditing firm. Providing accredited environmental, quality,
+          security, and sectoral system compliance assessments — since 2013.
+        </p>
+
+        <p class="footer-address"
+          style="margin-top: 10px; font-size: 14px; color: rgba(255, 255, 255, 0.7); line-height: 1.5;">
+          <strong>Headquarters:</strong> 2ND FLOOR, 23 A, ROYD STREET, P.S, Park St, Kolkata, West Bengal 700016.<br>
+          <strong>Corporate Identity:</strong> CIN: U74999DL2013PTC259XXX
+        </p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/msrassessment2020/" target="_blank" class="social-btn"
+            aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/msr_assessment/" target="_blank" class="social-btn"
+            aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UC0_Ji0MVc-1VtQIPVB-rijw" target="_blank" class="social-btn"
+            aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.linkedin.com/company/msr-assessment-pvt-ltd/" target="_blank" class="social-btn"
+            aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <!-- Core Standards -->
+      <div class="footer-col">
+        <h4>Core Standards</h4>
+        <a href="iso-9001-certification.html">ISO 9001 (QMS)</a>
+        <a href="iso-14001-certification.html">ISO 14001 (EMS)</a>
+        <a href="iso-27001-certification.html">ISO 27001 (ISMS)</a>
+        <a href="iso-45001-certification.html">ISO 45001 (OHS)</a>
+        <a href="iso-22000-certification.html">ISO 22000 (FSMS)</a>
+      </div>
+
+      <!-- Audits & Advisory -->
+      <div class="footer-col">
+        <h4>Audits &amp; Advisory</h4>
+        <a href="internal-audit-services.html">Internal Audits</a>
+        <a href="compliance-consulting.html">Regulatory Compliance</a>
+        <a href="iso-31000-consulting.html">ISO 31000 Risks</a>
+        <a href="certificate-verification.html">Registry Lookup</a>
+      </div>
+
+      <!-- Contact Helpline -->
+      <div class="footer-newsletter">
+        <h4>Advisory Helpline</h4>
+        <p>Talk to our central processing desk or query registry certificates.</p>
+        <div style="margin-top: var(--s2); display: flex; flex-direction: column; gap: 8px;">
+          <a href="tel:+918337004170" style="color: white; font-weight: 700; font-size: 15px;"><i class="fas fa-phone"
+              style="color: var(--accent); margin-right: 6px;"></i> +91 83370 04170</a>
+          <a href="mailto: admin@msrassessment.com" style="color: white; font-weight: 700; font-size: 15px;"><i
+              class="fas fa-envelope" style="color: var(--accent); margin-right: 6px;"></i> admin@msrassessment.com</a>
+        </div>
+        <div style="margin-top: var(--s3);">
+          <a href="about-us.html"
+            style="font-size:13px;color:rgba(255,255,255,0.4); text-decoration: underline;">Editorial Guidelines</a>
+          &nbsp;·&nbsp;
+          <a href="about-us.html#methodology"
+            style="font-size:13px;color:rgba(255,255,255,0.4); text-decoration: underline;">Audit Methodology</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 MSR Assessment Pvt Ltd. All rights reserved. Registered under MCA.</span>
+      <div class="footer-legal-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+        <a href="#">Disclaimer</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Inquiry Modal -->
+  <div id="inquiry-modal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <h2 class="modal-title">Talk To An Expert</h2>
+          <p class="modal-subtitle">Our team will respond within 2 business hours.</p>
+        </div>
+        <button class="modal-close" id="modal-close-btn" aria-label="Close">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="inquiry-form" novalidate>
+          <input type="hidden" id="inq-service-pre" name="service_interested">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="inq-name">Full Name *</label>
+              <input type="text" id="inq-name" name="name" required placeholder="Rajesh Sharma">
+            </div>
+            <div class="form-group">
+              <label for="inq-phone">Phone *</label>
+              <input type="tel" id="inq-phone" name="phone" required placeholder="+91 98765 43210">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inq-email">Email Address *</label>
+            <input type="email" id="inq-email" name="email" required placeholder="rajesh@yourcompany.com">
+          </div>
+          <div class="form-group">
+            <label for="inq-message">Your Requirement</label>
+            <textarea id="inq-message" name="message" rows="4" placeholder="Tell us what you need..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit">
+            Submit Inquiry <i class="fas fa-arrow-right"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/918337004170?text=Hello%20MSR%20Assessment%20Pvt%20Ltd%20Team%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+    class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+    aria-label="Contact MSR Assessment Pvt Ltd on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <div class="toast" id="toast">
+    <i class="fas fa-check-circle"></i>
+    <span id="toast-msg">Sent successfully!</span>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="translations.js"></script>
+  <script src="service.js"></script>
+  <script src="mailer.js"></script>
+  <script>
+    // Reveal observer for service page
+    document.addEventListener('DOMContentLoaded', () => {
+      const revealEls = document.querySelectorAll('[data-reveal]');
+      const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); obs.unobserve(e.target); } });
+      }, { threshold: 0.07 });
+      revealEls.forEach(el => obs.observe(el));
+
+      // Modal
+      const modal = document.getElementById('inquiry-modal');
+      const openModal = () => modal.classList.add('open');
+      const closeModal = () => modal.classList.remove('open');
+      ['btn-inquiry', 'svc-inquiry-btn', 'sidebar-inquiry-btn'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.addEventListener('click', openModal);
+      });
+      document.getElementById('modal-close-btn').addEventListener('click', closeModal);
+      modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+      const fc = document.getElementById('footer-contact');
+      if (fc) fc.addEventListener('click', e => { e.preventDefault(); openModal(); });
+
+      // FAQ accordion
+      document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const item = btn.closest('.faq-item');
+          const isOpen = item.classList.contains('open');
+          document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+          if (!isOpen) item.classList.add('open');
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="MSR Compliance Insights & Regulatory Updates — Stay informed about GST amendments, MCA guidelines, and trademark laws in India.">
+  <title>MSR Compliance Insights &amp; Regulatory Blogs | MSR Assessment Pvt Ltd</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Specific Page Styles */
+    .blog-hero {
+      padding: calc(38px + 70px + 64px) 0 var(--s6);
+      background: var(--bg-alt);
+      border-bottom: 1px solid var(--border-solid);
+    }
+
+    .blog-hero-wrap {
+      max-width: var(--content-w);
+      margin: 0 auto;
+      padding: 0 var(--s5);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .blog-hero-content {
+      flex: 1;
+    }
+
+    .blog-hero-title {
+      font-family: var(--font-head);
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 800;
+      letter-spacing: -1.8px;
+      color: var(--primary);
+      line-height: 1.1;
+      margin-bottom: var(--s2);
+    }
+
+    .blog-hero-desc {
+      font-size: 15.5px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      max-width: 580px;
+    }
+
+    /* Search & Filter Row */
+    .blog-filter-section {
+      padding: var(--s4) 0;
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border-solid);
+      position: sticky;
+      top: 78px;
+      z-index: 100;
+    }
+
+    .bf-wrap {
+      max-width: var(--content-w);
+      margin: 0 auto;
+      padding: 0 var(--s5);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: var(--s3);
+      flex-wrap: wrap;
+    }
+
+    .bf-search-group {
+      position: relative;
+      width: 100%;
+      max-width: 320px;
+    }
+
+    .bf-search-input {
+      width: 100%;
+      padding: 10px 14px 10px 38px;
+      background: var(--bg);
+      border: 1px solid var(--border-solid);
+      border-radius: var(--r-md);
+      font-family: var(--font-body);
+      font-size: 13.5px;
+      color: var(--text);
+      outline: none;
+      transition: var(--t-fast);
+    }
+
+    .bf-search-input:focus {
+      border-color: var(--primary);
+      background: var(--bg-card);
+    }
+
+    .bf-search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-faint);
+      font-size: 13px;
+    }
+
+    .bf-categories {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+    }
+
+    .bf-cat-btn {
+      padding: 7px 15px;
+      background: var(--bg);
+      border: 1px solid var(--border-solid);
+      border-radius: var(--r-pill);
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: var(--t-fast);
+    }
+
+    .bf-cat-btn:hover,
+    .bf-cat-btn.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: white;
+    }
+
+    /* Grid layout */
+    .blog-grid-section {
+      padding: var(--s10) 0;
+      background: var(--bg);
+    }
+
+    .bg-wrap {
+      max-width: var(--content-w);
+      margin: 0 auto;
+      padding: 0 var(--s5);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--s4);
+    }
+
+    @media (max-width: 1024px) {
+      .bg-wrap {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .blog-hero-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .bf-wrap {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .bf-search-group {
+        max-width: none;
+      }
+
+      .bg-wrap {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <link rel="canonical" href="https://msrassessment.com/blogs.html">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://msrassessment.com/blogs.html#webpage",
+    "name": "MSR Compliance Insights &amp; Regulatory Blogs",
+    "url": "https://msrassessment.com/blogs.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "MSR Assessment Pvt Ltd",
+      "url": "https://msrassessment.com"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Trust Ribbon -->
+  <div class="trust-ribbon">
+    <div class="trust-ribbon-track">
+      <span class="ribbon-item"><span class="ri-dot"></span> <strong>MCA Registered</strong></span>
+      <span class="ribbon-item"><span class="ri-dot"></span> <strong>5,000+</strong> Businesses Served</span>
+      <span class="ribbon-item"><span class="ri-dot"></span> CA &amp; CS <strong>Professionals</strong></span>
+      <span class="ribbon-item"><span class="ri-dot"></span> <strong>72-Hour</strong> Turnaround</span>
+      <span class="ribbon-item"><span class="ri-dot"></span> <strong>100%</strong> Confidential</span>
+      <span class="ribbon-item"><span class="ri-dot"></span> <strong>Pan-India</strong> Services</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header scrolled" role="banner">
+    <div class="header-wrap">
+      <a href="index.html" class="site-logo">
+        <img src="msr.png" alt="MSR Assessment Pvt Ltd" width="40" height="40">
+        <div class="logo-wordmark">
+          <span class="logo-name">MSR Assessment Pvt Ltd</span>
+          <span class="logo-tagline">Corporate &amp; Legal Services</span>
+        </div>
+      </a>
+
+      <!-- Navigation -->
+      <!-- Toggle Button for Mobile Navigation -->
+      <button class="menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Navigation -->
+      <nav class="header-nav" role="navigation" aria-label="Main navigation" id="header-nav">
+
+        <!-- Close Button for Mobile Navigation Drawer -->
+        <button class="menu-close-btn" id="mobile-menu-close" aria-label="Close navigation">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#about-section" class="nav-link" id="nav-about-link">About Us</a>
+
+        <!-- Services Mega Menu -->
+        <div class="nav-dropdown">
+          <button class="nav-link" aria-expanded="false" aria-haspopup="true" id="nav-services-btn">
+            Services <span class="chevron"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="mega-panel mega-panel-wide" role="menu" aria-labelledby="nav-services-btn">
+            <div class="mega-grid">
+
+              <!-- Column 1: Company Registration & Documentation -->
+              <div class="mega-col">
+                <div class="mega-category-block" data-cat-id="inc">
+                  <div class="mega-col-label">Incorporation</div>
+                  <h4>Company Registration</h4>
+                  <div class="mega-links">
+                    <a href="company-registration.html" class="mega-link"
+                      style="font-weight:700;color:var(--primary);"><i class="fas fa-circle-arrow-right"></i> Overview
+                      Page</a>
+                    <a href="service.html?id=private-limited-company-registration-india" class="mega-link">Private Limited Co</a>
+                    <a href="service.html?id=llp-registration" class="mega-link">LLP Registration</a>
+                    <a href="service.html?id=opc-registration" class="mega-link">OPC Registration</a>
+                    <a href="service.html?id=partnership-firm" class="mega-link">Partnership Firm</a>
+                    <a href="service.html?id=startup-india-registration" class="mega-link">Startup India</a>
+                    <a href="service.html?id=nidhi-company" class="mega-link">Nidhi Company</a>
+                    <a href="service.html?id=section-8-company" class="mega-link">Section 8 Company</a>
+                  </div>
+                </div>
+                <div class="mega-category-block" data-cat-id="docs">
+                  <div class="mega-col-label">Contracts</div>
+                  <h4>Documentation Services</h4>
+                  <div class="mega-links">
+                    <a href="service.html?id=legal-drafting" class="mega-link">Legal Drafting</a>
+                    <a href="service.html?id=agreements" class="mega-link">Agreements &amp; Contracts</a>
+                    <a href="service.html?id=affidavits" class="mega-link">Affidavits Preparation</a>
+                    <a href="service.html?id=moa-aoa" class="mega-link">MOA &amp; AOA Drafting</a>
+                    <a href="service.html?id=compliance-documentation" class="mega-link">Compliance Drafting</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Column 2: ISO Certification & Training Services -->
+              <div class="mega-col">
+                <div class="mega-category-block" data-cat-id="iso">
+                  <div class="mega-col-label">Standards</div>
+                  <h4>ISO Certification</h4>
+                  <div class="mega-links">
+                    <a href="iso-certification.html" class="mega-link" style="font-weight:700;color:var(--primary);"><i
+                        class="fas fa-circle-arrow-right"></i> Overview Page</a>
+                    <a href="service.html?id=iso-9001" class="mega-link">ISO 9001 (Quality)</a>
+                    <a href="service.html?id=iso-14001" class="mega-link">ISO 14001 (Environment)</a>
+                    <a href="service.html?id=iso-27001" class="mega-link">ISO 27001 (Security)</a>
+                    <a href="service.html?id=iso-45001" class="mega-link">ISO 45001 (Health &amp; Safety)</a>
+                    <a href="service.html?id=iso-22000" class="mega-link">ISO 22000 (Food Safety)</a>
+                    <a href="service.html?id=gmp-certification" class="mega-link">GMP Certification</a>
+                    <a href="service.html?id=haccp-certification" class="mega-link">HACCP Certification</a>
+                  </div>
+                </div>
+                <div class="mega-category-block" data-cat-id="training">
+                  <div class="mega-col-label">Workshops</div>
+                  <h4>Training Services</h4>
+                  <div class="mega-links">
+                    <a href="training-services.html" class="mega-link" style="font-weight:700;color:var(--primary);"><i
+                        class="fas fa-circle-arrow-right"></i> Overview Page</a>
+                    <a href="service.html?id=iso-awareness-training" class="mega-link">ISO Awareness</a>
+                    <a href="service.html?id=internal-auditor-training" class="mega-link">Internal Auditor Training</a>
+                    <a href="service.html?id=compliance-training" class="mega-link">Compliance Training</a>
+                    <a href="service.html?id=corporate-workshops" class="mega-link">Corporate Workshops</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Column 3: Digital Services & IPR Services -->
+              <div class="mega-col">
+                <div class="mega-category-block" data-cat-id="digital">
+                  <div class="mega-col-label">Software &amp; Web</div>
+                  <h4>Digital Services</h4>
+                  <div class="mega-links">
+                    <a href="website-development.html" class="mega-link"
+                      style="font-weight:700;color:var(--primary);"><i class="fas fa-circle-arrow-right"></i> Web
+                      Development</a>
+                    <a href="mobile-app-development.html" class="mega-link"
+                      style="font-weight:700;color:var(--primary);"><i class="fas fa-circle-arrow-right"></i> Mobile App
+                      Dev</a>
+                    <a href="digital-marketing.html" class="mega-link" style="font-weight:700;color:var(--primary);"><i
+                        class="fas fa-circle-arrow-right"></i> Digital Marketing</a>
+                    <a href="service.html?id=e-commerce-development" class="mega-link">E-Commerce Dev</a>
+                    <a href="service.html?id=seo-services" class="mega-link">SEO Services</a>
+                    <a href="service.html?id=social-media-marketing" class="mega-link">Social Media Marketing</a>
+                    <a href="service.html?id=branding-design" class="mega-link">Branding &amp; Design</a>
+                  </div>
+                </div>
+                <div class="mega-category-block" data-cat-id="ip">
+                  <div class="mega-col-label">IP &amp; Branding</div>
+                  <h4>IPR Services</h4>
+                  <div class="mega-links">
+                    <a href="trademark-registration.html" class="mega-link"
+                      style="font-weight:700;color:var(--primary);"><i class="fas fa-circle-arrow-right"></i> Overview
+                      Page</a>
+                    <a href="service.html?id=trademark-objection" class="mega-link">Trademark Objection</a>
+                    <a href="service.html?id=trademark-renewal" class="mega-link">Trademark Renewal</a>
+                    <a href="service.html?id=copyright-registration" class="mega-link">Copyright Registration</a>
+                    <a href="service.html?id=patent-filing" class="mega-link">Patent Filing</a>
+                    <a href="service.html?id=design-registration" class="mega-link">Design Registration</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Column 4: Licenses & Auditing -->
+              <div class="mega-col">
+                <div class="mega-category-block" data-cat-id="licenses">
+                  <div class="mega-col-label">Tax &amp; Licensing</div>
+                  <h4>Licenses &amp; Approvals</h4>
+                  <div class="mega-links">
+                    <a href="gst-registration.html" class="mega-link" style="font-weight:700;color:var(--primary);"><i
+                        class="fas fa-circle-arrow-right"></i> GST Registration</a>
+                    <a href="fssai-license.html" class="mega-link" style="font-weight:700;color:var(--primary);"><i
+                        class="fas fa-circle-arrow-right"></i> FSSAI License</a>
+                    <a href="msme-registration.html" class="mega-link" style="font-weight:700;color:var(--primary);"><i
+                        class="fas fa-circle-arrow-right"></i> MSME Registration</a>
+                    <a href="service.html?id=iec-registration" class="mega-link">IEC Registration</a>
+                    <a href="service.html?id=trade-license" class="mega-link">Trade License</a>
+                    <a href="service.html?id=shop-establishment-license" class="mega-link">Shop &amp; Establishment</a>
+                  </div>
+                </div>
+                <div class="mega-category-block" data-cat-id="audit">
+                  <div class="mega-col-label">Risk &amp; Review</div>
+                  <h4>Audit &amp; Inspection</h4>
+                  <div class="mega-links">
+                    <a href="audit-services.html" class="mega-link" style="font-weight:700;color:var(--primary);"><i
+                        class="fas fa-circle-arrow-right"></i> Overview Page</a>
+                    <a href="service.html?id=internal-audit" class="mega-link">Internal Audit</a>
+                    <a href="service.html?id=compliance-audit" class="mega-link">Compliance Audit</a>
+                    <a href="service.html?id=iso-audit" class="mega-link">ISO Audit Support</a>
+                    <a href="service.html?id=risk-assessment" class="mega-link">Risk Assessment</a>
+                    <a href="service.html?id=inspection-support" class="mega-link">Inspection Support</a>
+                  </div>
+                </div>
+              </div>
+
+            </div><!-- /mega-grid -->
+          </div><!-- /mega-panel -->
+        </div>
+
+        <a href="certification-process.html" class="nav-link">Certification Process</a>
+        <a href="career.html" class="nav-link">Career</a>
+        <a href="blogs.html" class="nav-link">Blogs</a>
+        <!-- <a href="team.html" class="nav-link">Team</a> -->
+        <a href="#" class="nav-link nav-contact-btn">Contact Us</a>
+        <a href="payment.html" class="nav-link">Online Payment</a>
+
+        <!-- Language Selector Dropdown -->
+        <div class="nav-dropdown lang-selector">
+          <button class="nav-link" aria-expanded="false" aria-haspopup="true" id="lang-btn">
+            <i class="fas fa-globe"></i> <span id="lang-current">EN</span> <span class="chevron"><i
+                class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="mega-panel mega-panel-xs lang-panel">
+            <a href="#" class="lang-item active" data-lang="en">English</a>
+            <a href="#" class="lang-item" data-lang="hi">हिन्दी (Hindi)</a>
+          </div>
+        </div>
+
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-sm btn-primary nav-contact-btn">
+          Talk To An Expert
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="blog-hero">
+      <div class="blog-hero-wrap">
+        <div class="blog-hero-content">
+          <div class="breadcrumb"
+            style="display:flex; gap:6px; font-size:12px; color:var(--text-faint); margin-bottom:14px;">
+            <a href="index.html" style="color:var(--primary); text-decoration:none;">Home</a>
+            <span>/</span>
+            <span>Blogs &amp; Updates</span>
+          </div>
+          <h1 class="blog-hero-title">MSR Compliance Insights</h1>
+          <p class="blog-hero-desc">Expert analysis and regulatory updates from our CA and corporate legal partners —
+            simplified for founders and corporate operations team managers.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search & Filter -->
+    <section class="blog-filter-section">
+      <div class="bf-wrap">
+        <div class="bf-categories">
+          <button class="bf-cat-btn active">All Articles</button>
+          <button class="bf-cat-btn">GST Updates</button>
+          <button class="bf-cat-btn">MCA / Corporate Law</button>
+          <button class="bf-cat-btn">Trademark &amp; IP</button>
+          <button class="bf-cat-btn">ISO Quality Audit</button>
+        </div>
+        <div class="bf-search-group">
+          <i class="fas fa-search bf-search-icon"></i>
+          <input type="text" class="bf-search-input" placeholder="Search compliance updates...">
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="blog-grid-section">
+      <div class="bg-wrap">
+
+        <!-- Blog Card 1 -->
+        <article class="insight-card" data-reveal>
+          <div class="insight-img">
+            <span class="insight-tag it-gst">GST Update</span>
+            <i class="fas fa-file-invoice-dollar"></i>
+          </div>
+          <div class="insight-content">
+            <div class="insight-date">June 2026 &nbsp;·&nbsp; 5 min read</div>
+            <h3 class="insight-title">GSTR-9 Annual Return: Key Changes and Compliances for FY 2025-26</h3>
+            <p class="insight-excerpt">We break down the new amendments to the GSTR-9 format, clarifying optional
+              tables, matching criteria, and penalty limits for corporate filers.</p>
+            <a href="#" class="insight-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Blog Card 2 -->
+        <article class="insight-card" data-reveal>
+          <div class="insight-img">
+            <span class="insight-tag it-mca">MCA Alert</span>
+            <i class="fas fa-building"></i>
+          </div>
+          <div class="insight-content">
+            <div class="insight-date">May 2026 &nbsp;·&nbsp; 4 min read</div>
+            <h3 class="insight-title">MCA V3 Portal Upgrade: Troubleshooting Common Filing Errors</h3>
+            <p class="insight-excerpt">MCA has migrated core files to the V3 platform. Here are the step-by-step
+              guidelines to complete digital signature linking and name reservations.</p>
+            <a href="#" class="insight-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Blog Card 3 -->
+        <article class="insight-card" data-reveal>
+          <div class="insight-img">
+            <span class="insight-tag it-ip">IP &amp; Trademark</span>
+            <i class="fas fa-trademark"></i>
+          </div>
+          <div class="insight-content">
+            <div class="insight-date">April 2026 &nbsp;·&nbsp; 3 min read</div>
+            <h3 class="insight-title">Why Registering Your Trademark Before Funding is Mandatory</h3>
+            <p class="insight-excerpt">Failing to register your brand logo or trademark class early can lead to legal
+              oppositions during investor due diligence operations.</p>
+            <a href="#" class="insight-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Blog Card 4 -->
+        <article class="insight-card" data-reveal>
+          <div class="insight-img">
+            <span class="insight-tag it-iso" style="background:#EBF5FF; color:#1E40AF;">ISO QMS</span>
+            <i class="fas fa-award"></i>
+          </div>
+          <div class="insight-content">
+            <div class="insight-date">March 2026 &nbsp;·&nbsp; 6 min read</div>
+            <h3 class="insight-title">A Beginner's Guide to ISO 9001:2015 Quality Management Systems</h3>
+            <p class="insight-excerpt">Learn how structured SOP drafting and process controls under ISO frameworks help
+              reduce system errors and attract premium global clients.</p>
+            <a href="#" class="insight-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Blog Card 5 -->
+        <article class="insight-card" data-reveal>
+          <div class="insight-img">
+            <span class="insight-tag it-tax" style="background:#FEF3C7; color:#92400E;">Taxation</span>
+            <i class="fas fa-receipt"></i>
+          </div>
+          <div class="insight-content">
+            <div class="insight-date">February 2026 &nbsp;·&nbsp; 4 min read</div>
+            <h3 class="insight-title">Startup Tax Exemption: How to Apply for Section 80-IAC Exemptions</h3>
+            <p class="insight-excerpt">Steps to register with DPIIT under Startup India guidelines and file applications
+              for 3 consecutive tax exemption years.</p>
+            <a href="#" class="insight-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Blog Card 6 -->
+        <article class="insight-card" data-reveal>
+          <div class="insight-img">
+            <span class="insight-tag it-digital" style="background:#F3E8FF; color:#6B21A8;">Tech &amp; Web</span>
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="insight-content">
+            <div class="insight-date">January 2026 &nbsp;·&nbsp; 5 min read</div>
+            <h3 class="insight-title">Security Checkpoints for Corporate Website Auditing</h3>
+            <p class="insight-excerpt">How implementing HTTPS protocols, SSL certification, and databases encryption
+              tags prepares your portal for regulatory compliance safety audits.</p>
+            <a href="#" class="insight-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-grid">
+      <!-- Brand -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="msr.png" alt="MSR Assessment Pvt Ltd" width="38" height="38">
+          <span class="footer-logo-name">MSR Assessment Pvt Ltd</span>
+        </div>
+        <p class="footer-tagline">
+          India's trusted third-party registrar and auditing firm. Providing accredited environmental, quality,
+          security, and sectoral system compliance assessments — since 2013.
+        </p>
+
+        <p class="footer-address"
+          style="margin-top: 10px; font-size: 14px; color: rgba(255, 255, 255, 0.7); line-height: 1.5;">
+          <strong>Headquarters:</strong> 2ND FLOOR, 23 A, ROYD STREET, P.S, Park St, Kolkata, West Bengal 700016.<br>
+          <strong>Corporate Identity:</strong> CIN: U74999DL2013PTC259XXX
+        </p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/msrassessment2020/" target="_blank" class="social-btn"
+            aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/msr_assessment/" target="_blank" class="social-btn"
+            aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UC0_Ji0MVc-1VtQIPVB-rijw" target="_blank" class="social-btn"
+            aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.linkedin.com/company/msr-assessment-pvt-ltd/" target="_blank" class="social-btn"
+            aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <!-- Core Standards -->
+      <div class="footer-col">
+        <h4>Core Standards</h4>
+        <a href="iso-9001-certification.html">ISO 9001 (QMS)</a>
+        <a href="iso-14001-certification.html">ISO 14001 (EMS)</a>
+        <a href="iso-27001-certification.html">ISO 27001 (ISMS)</a>
+        <a href="iso-45001-certification.html">ISO 45001 (OHS)</a>
+        <a href="iso-22000-certification.html">ISO 22000 (FSMS)</a>
+      </div>
+
+      <!-- Audits & Advisory -->
+      <div class="footer-col">
+        <h4>Audits &amp; Advisory</h4>
+        <a href="internal-audit-services.html">Internal Audits</a>
+        <a href="compliance-consulting.html">Regulatory Compliance</a>
+        <a href="iso-31000-consulting.html">ISO 31000 Risks</a>
+        <a href="certificate-verification.html">Registry Lookup</a>
+      </div>
+
+      <!-- Contact Helpline -->
+      <div class="footer-newsletter">
+        <h4>Advisory Helpline</h4>
+        <p>Talk to our central processing desk or query registry certificates.</p>
+        <div style="margin-top: var(--s2); display: flex; flex-direction: column; gap: 8px;">
+          <a href="tel:+918337004170" style="color: white; font-weight: 700; font-size: 15px;"><i class="fas fa-phone"
+              style="color: var(--accent); margin-right: 6px;"></i> +91 83370 04170</a>
+          <a href="mailto: admin@msrassessment.com" style="color: white; font-weight: 700; font-size: 15px;"><i
+              class="fas fa-envelope" style="color: var(--accent); margin-right: 6px;"></i> admin@msrassessment.com</a>
+        </div>
+        <div style="margin-top: var(--s3);">
+          <a href="about-us.html"
+            style="font-size:13px;color:rgba(255,255,255,0.4); text-decoration: underline;">Editorial Guidelines</a>
+          &nbsp;·&nbsp;
+          <a href="about-us.html#methodology"
+            style="font-size:13px;color:rgba(255,255,255,0.4); text-decoration: underline;">Audit Methodology</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 MSR Assessment Pvt Ltd. All rights reserved. Registered under MCA.</span>
+      <div class="footer-legal-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+        <a href="#">Disclaimer</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/918337004170?text=Hello%20MSR%20Assessment%20Pvt%20Ltd%20Team%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+    class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+    aria-label="Contact MSR Assessment Pvt Ltd on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Inquiry Modal -->
+  <div id="inquiry-modal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <h2 class="modal-title">Talk To An Expert</h2>
+          <p class="modal-subtitle">Our team will respond within 2 business hours.</p>
+        </div>
+        <button class="modal-close" id="modal-close-btn" aria-label="Close">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="inquiry-form" novalidate>
+          <input type="hidden" id="inq-service-pre" name="service_interested" value="Insights Portal">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="inq-name">Full Name *</label>
+              <input type="text" id="inq-name" name="name" required placeholder="Rajesh Sharma">
+            </div>
+            <div class="form-group">
+              <label for="inq-phone">Phone *</label>
+              <input type="tel" id="inq-phone" name="phone" required placeholder="+91 98765 43210">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inq-email">Email Address *</label>
+            <input type="email" id="inq-email" name="email" required placeholder="rajesh@yourcompany.com">
+          </div>
+          <div class="form-group">
+            <label for="inq-message">Your Requirement</label>
+            <textarea id="inq-message" name="message" rows="4" placeholder="Tell us what you need..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit">
+            Submit Inquiry <i class="fas fa-arrow-right"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">
+    <i class="fas fa-check-circle"></i>
+    <span id="toast-msg">Sent successfully!</span>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="translations.js"></script>
+  <script src="script.js"></script>
+  <script src="mailer.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Reveal Observer
+      const revealEls = document.querySelectorAll('[data-reveal]');
+      const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); obs.unobserve(e.target); } });
+      }, { threshold: 0.07 });
+      revealEls.forEach(el => obs.observe(el));
+
+      // Modal
+      const modal = document.getElementById('inquiry-modal');
+      const openModal = () => modal.classList.add('open');
+      const closeModal = () => modal.classList.remove('open');
+      document.querySelectorAll('.nav-contact-btn').forEach(btn => {
+        btn.addEventListener('click', e => { e.preventDefault(); openModal(); });
+      });
+      const mClose = document.getElementById('modal-close-btn');
+      if (mClose) mClose.addEventListener('click', closeModal);
+      if (modal) {
+        modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+      }
+
+      // ─── BLOGS FILTERING & SEARCH ──────────────────────────────────────────
+      const blogGrid = document.querySelector('.bg-wrap');
+      const filterButtons = document.querySelectorAll('.bf-cat-btn');
+      const searchInput = document.querySelector('.bf-search-input');
+
+      if (blogGrid && typeof articles !== 'undefined') {
+        let currentCategory = 'all';
+        let searchQuery = '';
+
+        function renderArticles() {
+          const filtered = articles.filter(art => {
+            const matchesCategory = (currentCategory === 'all' || art.category === currentCategory);
+            const matchesSearch = (
+              art.title.toLowerCase().includes(searchQuery) ||
+              art.excerpt.toLowerCase().includes(searchQuery)
+            );
+            return matchesCategory && matchesSearch;
+          });
+
+          if (filtered.length === 0) {
+            blogGrid.innerHTML = `
+            <div style="grid-column: 1 / -1; text-align: center; padding: 48px; color: var(--text-muted); font-size: 16px;">
+              <i class="fas fa-search" style="font-size: 32px; color: var(--text-faint); margin-bottom: 12px; display: block;"></i>
+              No articles found matching your criteria.
+            </div>
+          `;
+            return;
+          }
+
+          blogGrid.innerHTML = filtered.map(art => `
+          <article class="insight-card revealed" data-category="${art.category}">
+            <div class="insight-img">
+              <span class="insight-tag ${art.tagClass}">${art.tagText}</span>
+              <img src="${art.image}" alt="${art.title}">
+            </div>
+            <div class="insight-content">
+              <div class="insight-date">${art.date} &nbsp;·&nbsp; ${art.readTime}</div>
+              <h3 class="insight-title">${art.title}</h3>
+              <p class="insight-excerpt">${art.excerpt}</p>
+              <a href="article.html?id=${art.id}" class="insight-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+        `).join('');
+        }
+
+        // Initialize
+        renderArticles();
+
+        // Category filter clicks
+        filterButtons.forEach(btn => {
+          btn.addEventListener('click', () => {
+            filterButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const btnText = btn.textContent.trim().toLowerCase();
+            if (btnText.includes('all')) {
+              currentCategory = 'all';
+            } else if (btnText.includes('gst')) {
+              currentCategory = 'gst';
+            } else if (btnText.includes('mca') || btnText.includes('corporate')) {
+              currentCategory = 'mca';
+            } else if (btnText.includes('trademark') || btnText.includes('ip')) {
+              currentCategory = 'trademark';
+            } else if (btnText.includes('iso') || btnText.includes('quality')) {
+              currentCategory = 'iso';
+            }
+
+            renderArticles();
+          });
+        });
+
+        // Search input keyup
+        if (searchInput) {
+          searchInput.addEventListener('input', (e) => {
+            searchQuery = e.target.value.toLowerCase().trim();
+            renderArticles();
+          });
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>
