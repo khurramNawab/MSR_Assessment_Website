@@ -79,7 +79,7 @@ export default function Header() {
         <div className="header-wrap">
           {/* Logo */}
           <Link href="/" className="site-logo" aria-label="MSR Assessment Pvt Ltd Home">
-            <img src="/msrassessment/msr.png" alt="MSR Assessment Pvt Ltd Logo" width="65" height="65" />
+            <img src="/msr.png" alt="MSR Assessment Pvt Ltd Logo" width="65" height="65" />
             <div className="logo-wordmark">
               <span className="logo-name">{t("MSR Assessment Pvt Ltd")}</span>
               <span className="logo-tagline">{t("Corporate & Legal Services")}</span>
@@ -312,7 +312,7 @@ export default function Header() {
         {/* Drawer Header */}
         <div className="mobile-drawer-head">
           <Link href="/" className="site-logo" onClick={closeMobile}>
-            <img src="/msrassessment/msr.png" alt="MSR Assessment Pvt Ltd Logo" width="44" height="44" />
+            <img src="/msr.png" alt="MSR Assessment Pvt Ltd Logo" width="44" height="44" />
             <div className="logo-wordmark">
               <span className="logo-name" style={{ fontSize: '13px' }}>{t("MSR Assessment Pvt Ltd")}</span>
               <span className="logo-tagline">{t("Corporate & Legal Services")}</span>

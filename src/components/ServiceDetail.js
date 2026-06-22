@@ -227,13 +227,13 @@ export default function ServiceDetail({ serviceId }) {
   }
 
   // Background Image
-  let bgImage = '/msrassessment/assets/elegant_executive_board_room_with_glass_doors_and_professional_seating.png';
+  let bgImage = '/assets/elegant_executive_board_room_with_glass_doors_and_professional_seating.png';
   if (category.id === 'inc') {
-    bgImage = '/msrassessment/assets/high_end_corporate_still_life_photography_of_a_professional_wax_seal_on_a.png';
+    bgImage = '/assets/high_end_corporate_still_life_photography_of_a_professional_wax_seal_on_a.png';
   } else if (category.id === 'ip') {
-    bgImage = '/msrassessment/assets/two_professional_businessmen_in_suits_shaking_hands_in_a_high_rise_office.png';
+    bgImage = '/assets/two_professional_businessmen_in_suits_shaking_hands_in_a_high_rise_office.png';
   } else if (category.id === 'iso') {
-    bgImage = '/msrassessment/assets/global_business_map_visualization_with_data_nodes_and_connections_styliz.png';
+    bgImage = '/assets/global_business_map_visualization_with_data_nodes_and_connections_styliz.png';
   }
 
   let expertTeamDesc = t("MSR Assessment Pvt Ltd's qualified CA, CS and CMA team manages the complete process on your behalf — from documentation to final certificate delivery — ensuring full compliance with Indian regulatory requirements.");
@@ -303,7 +303,7 @@ export default function ServiceDetail({ serviceId }) {
             </div>
 
             <div className="svc-cat-badge">
-              <img src="/msrassessment/msr.png" alt="MSR Logo" style={{ width: '18px', height: '18px', objectFit: 'contain', marginRight: '6px' }} />
+              <img src="/msr.png" alt="MSR Logo" style={{ width: '18px', height: '18px', objectFit: 'contain', marginRight: '6px' }} />
               <span>{category.title}</span>
             </div>
 

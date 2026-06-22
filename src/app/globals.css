@@ -595,7 +595,7 @@ ul, ol { list-style: none; }
 .hero-bg-media {
   position: absolute;
   inset: 0;
-  background-image: url('/msrassessment/assets/modern_high_rise_corporate_office_building_with_glass_facade_representing.png');
+  background-image: url('/assets/modern_high_rise_corporate_office_building_with_glass_facade_representing.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -5548,7 +5548,7 @@ ul, ol { list-style: none; }
 /* 1. Payment & Billing Styles */
 .payment-hero {
   padding: calc(38px + 70px + 64px) 0 var(--s6);
-  background: linear-gradient(135deg, rgba(24, 49, 83, 0.95) 0%, rgba(14, 29, 48, 0.97) 100%), url('/msrassessment/assets/two_professional_businessmen_in_suits_shaking_hands_in_a_high_rise_office.png') no-repeat center/cover;
+  background: linear-gradient(135deg, rgba(24, 49, 83, 0.95) 0%, rgba(14, 29, 48, 0.97) 100%), url('/assets/two_professional_businessmen_in_suits_shaking_hands_in_a_high_rise_office.png') no-repeat center/cover;
   border-bottom: 1px solid var(--border-solid);
   color: white;
 }
@@ -5759,7 +5759,7 @@ ul, ol { list-style: none; }
 /* 2. Buy Form Styles */
 .pay-hero {
   padding: calc(38px + 70px + 64px) 0 var(--s6);
-  background: linear-gradient(135deg, rgba(24, 49, 83, 0.95) 0%, rgba(14, 29, 48, 0.97) 100%), url('/msrassessment/assets/two_professional_businessmen_in_suits_shaking_hands_in_a_high_rise_office.png') no-repeat center/cover;
+  background: linear-gradient(135deg, rgba(24, 49, 83, 0.95) 0%, rgba(14, 29, 48, 0.97) 100%), url('/assets/two_professional_businessmen_in_suits_shaking_hands_in_a_high_rise_office.png') no-repeat center/cover;
   border-bottom: 1px solid var(--border-solid);
   color: white;
 }
@@ -5975,7 +5975,7 @@ ul, ol { list-style: none; }
 /* 4. Career Page Styles */
 .career-hero {
   padding: calc(38px + 70px + 64px) 0 var(--s6);
-  background: linear-gradient(135deg, rgba(24, 49, 83, 0.95) 0%, rgba(14, 29, 48, 0.97) 100%), url('/msrassessment/assets/elegant_executive_board_room_with_glass_doors_and_professional_seating.png') no-repeat center/cover;
+  background: linear-gradient(135deg, rgba(24, 49, 83, 0.95) 0%, rgba(14, 29, 48, 0.97) 100%), url('/assets/elegant_executive_board_room_with_glass_doors_and_professional_seating.png') no-repeat center/cover;
   border-bottom: 1px solid var(--border-solid);
   color: white;
 }

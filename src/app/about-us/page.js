@@ -9,10 +9,10 @@ export default function AboutUs() {
   const [activeSlide, setActiveSlide] = useState(0);
 
   const galleryImages = [
-    '/msrassessment/assets/company_photos/mohsin.jpeg',
-    '/msrassessment/assets/company_photos/msr_1.jpeg',
-    '/msrassessment/assets/company_photos/msr_2.jpeg',
-    '/msrassessment/assets/company_photos/msr_3.avif',
+    '/assets/company_photos/mohsin.jpeg',
+    '/assets/company_photos/msr_1.jpeg',
+    '/assets/company_photos/msr_2.jpeg',
+    '/assets/company_photos/msr_3.avif',
   ];
 
   useEffect(() => {
@@ -43,7 +43,7 @@ export default function AboutUs() {
       <section className="svc-page-hero">
         <div
           className="svc-hero-bg-media"
-          style={{ backgroundImage: "url('/msrassessment/assets/modern_high_rise_corporate_office_building_with_glass_facade_representing.png')", opacity: 0.05 }}
+          style={{ backgroundImage: "url('/assets/modern_high_rise_corporate_office_building_with_glass_facade_representing.png')", opacity: 0.05 }}
         ></div>
         <div className="container">
           <span className="t-label">{t("About Us")}</span>

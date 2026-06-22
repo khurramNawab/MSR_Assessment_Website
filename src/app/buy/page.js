@@ -17,7 +17,7 @@ const getApiPath = (filename) => {
       return `${base}/api/${filename}`;
     }
   }
-  return `/msrassessment/api/${filename}`; // fallback default
+  return `/api/${filename}`; // fallback default
 };
 
 export default function BuyPage() {
@@ -125,7 +125,7 @@ export default function BuyPage() {
         currency: 'INR',
         name: 'MSR Assessment Pvt Ltd',
         description: 'Corporate & Legal Services',
-        image: typeof window !== 'undefined' ? window.location.origin + '/msrassessment/msr.png' : '/msrassessment/msr.png',
+        image: typeof window !== 'undefined' ? window.location.origin + '/msr.png' : '/msr.png',
         order_id: resData.order_id,
         prefill: {
           name: name.trim(),

@@ -9,28 +9,28 @@ const coreServicesSlides = [
   {
     title: "ISO Certification Services",
     desc: "ISO 9001, ISO 27001, ISO 14001, ISO 45001, ISO 22000 and industry-specific certifications.",
-    bg: "/msrassessment/assets/global_business_map_visualization_with_data_nodes_and_connections_styliz.png",
+    bg: "/assets/global_business_map_visualization_with_data_nodes_and_connections_styliz.png",
     link: "/iso-certification/",
     icon: "fa-certificate"
   },
   {
     title: "IPR Registration Services",
     desc: "Trademark Registration, Copyright Registration, Patent Assistance, Design Registration and Brand Protection.",
-    bg: "/msrassessment/assets/two_professional_businessmen_in_suits_shaking_hands_in_a_high_rise_office.png",
+    bg: "/assets/two_professional_businessmen_in_suits_shaking_hands_in_a_high_rise_office.png",
     link: "/trademark-registration/",
     icon: "fa-trademark"
   },
   {
     title: "Digital Marketing Services",
     desc: "SEO, Google Ads, Social Media management, Local SEO and Lead Generation.",
-    bg: "/msrassessment/assets/elegant_executive_board_room_with_glass_doors_and_professional_seating.png",
+    bg: "/assets/elegant_executive_board_room_with_glass_doors_and_professional_seating.png",
     link: "/digital-marketing/",
     icon: "fa-chart-line"
   },
   {
     title: "Web Development Services",
     desc: "Business Websites, Ecommerce Stores, Corporate Portals and Custom Web Applications, CRM.",
-    bg: "/msrassessment/assets/modern_high_rise_corporate_office_building_with_glass_facade_representing.png",
+    bg: "/assets/modern_high_rise_corporate_office_building_with_glass_facade_representing.png",
     link: "/service/web-development/",
     icon: "fa-laptop-code"
   }
@@ -589,7 +589,7 @@ export default function Home() {
                   <div className="testimonial-card-inner">
                     <div className="card-front">
                       <div className="logo-holder">
-                        <img src="/msrassessment/assets/domestic/TripNCare.jpg" alt="TripNCare" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '4px' }} />
+                        <img src="/assets/domestic/TripNCare.jpg" alt="TripNCare" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '4px' }} />
                       </div>
                       <div className="company-title">{t("TripNCare")}</div>
                       <div className="company-location">{t("Kolkata, IN")}</div>
@@ -610,7 +610,7 @@ export default function Home() {
                   <div className="testimonial-card-inner">
                     <div className="card-front">
                       <div className="logo-holder">
-                        <img src="/msrassessment/assets/domestic/ak_infrastructure_solutions.jpeg" alt="AK Infrastructure Solutions" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '4px' }} />
+                        <img src="/assets/domestic/ak_infrastructure_solutions.jpeg" alt="AK Infrastructure Solutions" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '4px' }} />
                       </div>
                       <div className="company-title">{t("AK Infrastructure Solutions")}</div>
                       <div className="company-location">{t("Jaipur, IN")}</div>
@@ -631,7 +631,7 @@ export default function Home() {
                   <div className="testimonial-card-inner">
                     <div className="card-front">
                       <div className="logo-holder">
-                        <img src="/msrassessment/assets/domestic/lizbon_healthcare.jpeg" alt="Lizbon Healthcare" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '4px' }} />
+                        <img src="/assets/domestic/lizbon_healthcare.jpeg" alt="Lizbon Healthcare" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '4px' }} />
                       </div>
                       <div className="company-title">{t("Lizbon Healthcare")}</div>
                       <div className="company-location">{t("Ahmedabad, IN")}</div>
@@ -652,7 +652,7 @@ export default function Home() {
                   <div className="testimonial-card-inner">
                     <div className="card-front">
                       <div className="logo-holder">
-                        <img src="/msrassessment/assets/domestic/saba_logo.png" alt="Saba Improving Values" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '4px' }} />
+                        <img src="/assets/domestic/saba_logo.png" alt="Saba Improving Values" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '4px' }} />
                       </div>
                       <div className="company-title">{t("Saba Improving Values")}</div>
                       <div className="company-location">{t("Chennai, IN")}</div>
@@ -725,7 +725,7 @@ export default function Home() {
                   <div className="testimonial-card-inner">
                     <div className="card-front">
                       <div className="logo-holder">
-                        <img src="/msrassessment/assets/domestic/TripNCare.jpg" alt="TripNCare" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '4px' }} />
+                        <img src="/assets/domestic/TripNCare.jpg" alt="TripNCare" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '4px' }} />
                       </div>
                       <div className="company-title">{t("TripNCare")}</div>
                       <div className="company-location">{t("Kolkata, IN")}</div>
@@ -746,7 +746,7 @@ export default function Home() {
                   <div className="testimonial-card-inner">
                     <div className="card-front">
                       <div className="logo-holder">
-                        <img src="/msrassessment/assets/domestic/ak_infrastructure_solutions.jpeg" alt="AK Infrastructure Solutions" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '4px' }} />
+                        <img src="/assets/domestic/ak_infrastructure_solutions.jpeg" alt="AK Infrastructure Solutions" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '4px' }} />
                       </div>
                       <div className="company-title">{t("AK Infrastructure Solutions")}</div>
                       <div className="company-location">{t("Jaipur, IN")}</div>
@@ -767,7 +767,7 @@ export default function Home() {
                   <div className="testimonial-card-inner">
                     <div className="card-front">
                       <div className="logo-holder">
-                        <img src="/msrassessment/assets/domestic/lizbon_healthcare.jpeg" alt="Lizbon Healthcare" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '4px' }} />
+                        <img src="/assets/domestic/lizbon_healthcare.jpeg" alt="Lizbon Healthcare" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '4px' }} />
                       </div>
                       <div className="company-title">{t("Lizbon Healthcare")}</div>
                       <div className="company-location">{t("Ahmedabad, IN")}</div>
@@ -788,7 +788,7 @@ export default function Home() {
                   <div className="testimonial-card-inner">
                     <div className="card-front">
                       <div className="logo-holder">
-                        <img src="/msrassessment/assets/domestic/saba_logo.png" alt="saba Improving Values" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '4px' }} />
+                        <img src="/assets/domestic/saba_logo.png" alt="saba Improving Values" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '4px' }} />
                       </div>
                       <div className="company-title">{t("Saba Improving Values")}</div>
                       <div className="company-location">{t("Chennai, IN")}</div>
@@ -868,7 +868,7 @@ export default function Home() {
                   <div className="testimonial-card-inner">
                     <div className="card-front">
                       <div className="logo-holder">
-                        <img src="/msrassessment/assets/global/Dressler-consulting.webp" alt="Dressler Consulting" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '4px' }} />
+                        <img src="/assets/global/Dressler-consulting.webp" alt="Dressler Consulting" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '4px' }} />
                       </div>
                       <div className="company-title">{t("Dressler Consulting")}</div>
                       <div className="company-location">{t("Merrick, New York")}</div>
@@ -889,7 +889,7 @@ export default function Home() {
                   <div className="testimonial-card-inner">
                     <div className="card-front">
                       <div className="logo-holder">
-                        <img src="/msrassessment/assets/global/IT%20Five.png" alt="IT Five" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '4px' }} />
+                        <img src="/assets/global/IT%20Five.png" alt="IT Five" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '4px' }} />
                       </div>
                       <div className="company-title">{t("IT Five")}</div>
                       <div className="company-location">{t("Armenia")}</div>
@@ -910,7 +910,7 @@ export default function Home() {
                   <div className="testimonial-card-inner">
                     <div className="card-front">
                       <div className="logo-holder">
-                        <img src="/msrassessment/assets/global/Peleka.png" alt="Peleka" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '4px' }} />
+                        <img src="/assets/global/Peleka.png" alt="Peleka" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '4px' }} />
                       </div>
                       <div className="company-title">{t("Peleka")}</div>
                       <div className="company-location">{t("Yerevan, Armenia")}</div>
@@ -1032,7 +1032,7 @@ export default function Home() {
                   <div className="testimonial-card-inner">
                     <div className="card-front">
                       <div className="logo-holder">
-                        <img src="/msrassessment/assets/global/Dressler-consulting.webp" alt="Dressler Consulting" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '4px' }} />
+                        <img src="/assets/global/Dressler-consulting.webp" alt="Dressler Consulting" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '4px' }} />
                       </div>
                       <div className="company-title">{t("Dressler Consulting")}</div>
                       <div className="company-location">{t("Merrick, New York")}</div>
@@ -1053,7 +1053,7 @@ export default function Home() {
                   <div className="testimonial-card-inner">
                     <div className="card-front">
                       <div className="logo-holder">
-                        <img src="/msrassessment/assets/global/IT%20Five.png" alt="IT Five" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '4px' }} />
+                        <img src="/assets/global/IT%20Five.png" alt="IT Five" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '4px' }} />
                       </div>
                       <div className="company-title">{t("IT Five")}</div>
                       <div className="company-location">{t("Yerevan, Armenia")}</div>
@@ -1074,7 +1074,7 @@ export default function Home() {
                   <div className="testimonial-card-inner">
                     <div className="card-front">
                       <div className="logo-holder">
-                        <img src="/msrassessment/assets/global/Peleka.png" alt="Peleka" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '4px' }} />
+                        <img src="/assets/global/Peleka.png" alt="Peleka" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '4px' }} />
                       </div>
                       <div className="company-title">{t("Peleka")}</div>
                       <div className="company-location">{t("Yerevan, Armenia")}</div>
@@ -1291,7 +1291,7 @@ export default function Home() {
             "@type": "Organization",
             "name": "MSR Assessment Pvt Ltd",
             "url": "https://msrassessment.com",
-            "logo": "https://msrassessment.com/msrassessment/msr.png",
+            "logo": "https://msrassessment.com/msr.png",
             "contactPoint": {
               "@type": "ContactPoint",
               "telephone": "+91-83370-04170",

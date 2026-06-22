@@ -169,7 +169,7 @@ export default function Payment() {
             </div>
 
             <div className="qr-box" style={{ padding: '10px', background: 'white', borderRadius: 'var(--r-md)', border: '1px solid var(--border-solid)' }}>
-              <img src="/msrassessment/MSR_QR.jpg" alt="MSR Assessment Pvt Ltd UPI QR Code" style={{ width: '180px', height: '180px', objectFit: 'contain', display: 'block' }} />
+              <img src="/MSR_QR.jpg" alt="MSR Assessment Pvt Ltd UPI QR Code" style={{ width: '180px', height: '180px', objectFit: 'contain', display: 'block' }} />
             </div>
 
             <div className="upi-info">

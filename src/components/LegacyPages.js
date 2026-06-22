@@ -159,7 +159,7 @@ export function CertificationProcessPage() {
       <section className="timeline-hero">
         <div 
           className="svc-hero-bg-media"
-          style={{ backgroundImage: "url('/msrassessment/assets/modern_high_rise_corporate_office_building_with_glass_facade_representing.png')", opacity: 0.05 }}
+          style={{ backgroundImage: "url('/assets/modern_high_rise_corporate_office_building_with_glass_facade_representing.png')", opacity: 0.05 }}
         ></div>
         <div className="timeline-hero-wrap">
           <div>
@@ -173,7 +173,7 @@ export function CertificationProcessPage() {
               {t("We simplify corporate ISO audit processes. From gap analysis to compliance certification, our qualified auditors manage every process milestone with strict regulatory transparency.")}
             </p>
           </div>
-          <div className="timeline-hero-image" style={{ backgroundImage: "url('/msrassessment/assets/certification_workflow.png')", backgroundSize: 'cover', backgroundPosition: 'center', height: '240px', borderRadius: 'var(--r-md)', border: '1px solid var(--border-solid)' }}></div>
+          <div className="timeline-hero-image" style={{ backgroundImage: "url('/assets/certification_workflow.png')", backgroundSize: 'cover', backgroundPosition: 'center', height: '240px', borderRadius: 'var(--r-md)', border: '1px solid var(--border-solid)' }}></div>
         </div>
       </section>
 

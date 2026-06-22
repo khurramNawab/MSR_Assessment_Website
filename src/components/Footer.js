@@ -13,7 +13,7 @@ export default function Footer() {
         {/* Brand */}
         <div className="footer-brand">
           <div className="footer-logo">
-            <img src="/msrassessment/msr.png" alt="MSR Assessment Pvt Ltd" width="65" height="65" />
+            <img src="/msr.png" alt="MSR Assessment Pvt Ltd" width="65" height="65" />
             <span className="footer-logo-name">{t("MSR Assessment Pvt Ltd")}</span>
           </div>
           <p className="footer-tagline">
