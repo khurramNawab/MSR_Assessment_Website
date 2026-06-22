@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Ignore API requests (let PHP handle them directly)
+  RewriteCond %{REQUEST_URI} ^/api/(.*)$ [OR]
+  RewriteCond %{REQUEST_URI} \.php$
+  RewriteRule ^.*$ - [L]
+
+  # If the requested file or directory exists, serve it
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Otherwise, route to index.html (Next.js handles 404 client-side)
+  RewriteRule ^ index.html [L]
+</IfModule>
